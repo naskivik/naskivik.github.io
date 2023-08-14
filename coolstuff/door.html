@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sketchy door</title>
+</head>
+<body>
+  <p>Watch out!</p>
+  <img src="door.jpg" onload="hmm()" onmouseover="no()" onclick="yes()">
+</body>
+<style>
+p {
+  font-size: 100px;
+}
+img {
+  width: 300px;
+  height: 300px;
+}
+</style>
+<script>
+function yes() {
+  alert("Watch out!")
+  alert("That was close!")
+}
+function no() {
+  alert("Don't click on that door!")
+}
+function hmm() {
+  alert("Be careful!")
+}
+</script>
+</html>

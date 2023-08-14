@@ -1,0 +1,40 @@
+p {
+	font-family: Tahoma;
+	font-weight: bold;
+	color: white;
+}
+h1 {
+	font-family: Tahoma;
+	text-align: center;
+	font-weight: bold;
+	font-size: 150px;
+	color: white;
+}
+h2 {
+	font-family: Tahoma;
+	text-align: center;
+	font-weight: bold;
+	color: white;
+}
+h3 {
+	font-family: Tahoma;
+	font-weight: bold;
+	color: white;
+}
+h4 {
+	font-family: Tahoma;
+	font-weight: bold;
+	color: whitel
+}
+h5 {
+	font-family: Tahoma;
+	font-weight: bold;
+	color: white;
+}
+img {
+	width: 300px;
+	height: 200px;
+}
+body {
+	background-color: black;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Primary Meta Tags -->
+<title>cowcam</title>
+<meta name="title" content="cowcam">
+<meta name="description" content="watch and talk about the cows">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="http://naskivik.rf.gd/cowcam.html">
+<meta property="og:title" content="cowcam">
+<meta property="og:description" content="watch and talk about the cows">
+<meta property="og:image" content="http://naskivik.rf.gd/cowcam.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="http://naskivik.rf.gd/cowcam.html">
+<meta property="twitter:title" content="cowcam">
+<meta property="twitter:description" content="watch and talk about the cows">
+<meta property="twitter:image" content="http://naskivik.rf.gd/cowcam.png">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>cowcam</title>
+</head>
+<body>
+<h1>look at the cows</h1>
+
+	<img id="myImage" src="http://185.74.219.23:91/asp/video.cgi" width="640" height="360">
+	<br><br>
+	<button onclick="changeImage('http://185.74.219.23:91/asp/video.cgi')">camera 1</button>
+	<button onclick="changeImage('http://87.57.109.42:85/mjpg/video.mjpg')">camera 2</button>
+<button onclick="changeImage('http://176.20.156.145:82/webcapture.jpg?command=snap&channel=1?COUNTER')">camera 3</button>
+<button onclick="changeImage('http://87.57.109.42:86/mjpg/video.mjpg')">camera 4</button>
+
+<h3>talk about the cows</h3>
+
+<script id="cid0020000343049942069" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 250px;height: 250px;">{"handle":"cowcam","arch":"js","styles":{"a":"000000","b":100,"c":"FFFFFF","d":"FFFFFF","k":"000000","l":"000000","m":"000000","n":"FFFFFF","p":"10","q":"000000","r":100}}</script>
+
+	<script>
+		function changeImage(imageUrl) {
+			document.getElementById("myImage").src = imageUrl;
+		}
+	</script>
+</body>
+</html>

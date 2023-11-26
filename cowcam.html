@@ -31,7 +31,26 @@
 	<br><br>
 	<button onclick="changeImage('http://185.74.219.23:91/asp/video.cgi')">camera 1</button>
 	<button onclick="changeImage('http://87.57.109.42:85/mjpg/video.mjpg')">camera 2</button>
-<button onclick="changeImage('http://92.118.2.116:81/webcapture.jpg?command=snap&channel=1?1692080942')">camera 3</button>
+<button onclick="changeImage('http://87.195.26.45:80/cgi-bin/viewer/video.jpg?r=COUNTER')
+const btn = document.getElementById('btn');
+
+const image = document.getElementById('myImage');
+
+const refreshEveryMS = 2000;
+
+setInterval(() => {
+  if (!image.src.includes('?')) {
+      image.src = `${image.src}?${Date.now()}`;
+	    } else {
+		    image.src =
+			      image.src.slice(0, image.src.indexOf('?') + 1) +
+				        Date.now();
+						  }
+						  
+						    console.log('image refreshed');
+							
+							  console.log(image.src);
+							  }, refreshEveryMS);">camera 3</button>
 <button onclick="changeImage('http://87.57.109.42:86/mjpg/video.mjpg')">camera 4</button>
 
 <h3>talk about the cows</h3>

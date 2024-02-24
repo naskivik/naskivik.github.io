@@ -27,30 +27,11 @@
 <body>
 <h1>look at the cows</h1>
 
-	<img id="myImage" src="http://188.181.247.2:81/mjpg/video.mjpg" width="640" height="360">
+	<img id="myImage" src="http://185.74.219.23:91/asp/video.cgi" width="640" height="360">
 	<br><br>
-	<button onclick="changeImage('http://188.181.247.2:81/mjpg/video.mjpg')">camera 1</button>
+	<button onclick="changeImage('http://185.74.219.23:91/asp/video.cgi')">camera 1</button>
 	<button onclick="changeImage('http://87.57.109.42:85/mjpg/video.mjpg')">camera 2</button>
-<button onclick="changeImage('http://185.51.105.233:85/jpgmulreq/1/image.jpg?key=1516975535684&lq=1&COUNTER')
-const btn = document.getElementById('btn');
-
-const image = document.getElementById('myImage');
-
-const refreshEveryMS = 2000;
-
-setInterval(() => {
-  if (!image.src.includes('?')) {
-      image.src = `${image.src}?${Date.now()}`;
-	    } else {
-		    image.src =
-			      image.src.slice(0, image.src.indexOf('?') + 1) +
-				        Date.now();
-						  }
-						  
-						    console.log('image refreshed');
-							
-							  console.log(image.src);
-							  }, refreshEveryMS);">camera 3</button>
+<button onclick="changeImage('http://188.181.247.2:81/mjpg/video.mjpg')">camera 3</button>
 <button onclick="changeImage('http://87.57.109.42:86/mjpg/video.mjpg')">camera 4</button>
 
 <h3>talk about the cows</h3>
